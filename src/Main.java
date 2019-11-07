@@ -13,6 +13,8 @@ public class Main {
 
         var theNumbers = theProvider.provideNumbers();
 
+
+
         System.out.println("BEFORE SORTING: [" + theNumbers.stream().map(Object::toString).collect(Collectors.joining(",")) + "]");
 
         NumberSorter theSorter = new BubbleSorter();
