@@ -2,6 +2,7 @@ package providers;
 
 import java.util.List;
 
-public interface NumberProvider {
+public interface NumberProvider
+{
     List<Integer> provideNumbers();
 }

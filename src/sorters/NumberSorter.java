@@ -2,6 +2,7 @@ package sorters;
 
 import java.util.List;
 
-public interface NumberSorter {
+public interface NumberSorter
+{
     void sort(List<Integer> items);
 }
