@@ -1,3 +1,4 @@
+import exporters.ConsoleExporter;
 import exporters.HTMLExporter;
 import exporters.NumberExporter;
 import providers.FromFileNumberProvider;
@@ -23,7 +24,7 @@ public class Main {
 
         System.out.println("AFTER SORTING : [" + theNumbers.stream().map(Object::toString).collect(Collectors.joining(",")) + "]");
 
-        NumberExporter theExporter = new HTMLExporter("numbersFormatted");
+        NumberExporter theExporter = new ConsoleExporter();
         theExporter.export(theNumbers);
     }
 }
