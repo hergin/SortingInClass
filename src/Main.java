@@ -1,6 +1,7 @@
 import exporters.HTMLExporter;
 import exporters.NumberExporter;
 import providers.FromFileNumberProvider;
+import providers.FromUserProvider;
 import providers.NumberProvider;
 import providers.RandomNumberProvider;
 import sorters.BasicSorter;
@@ -11,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        NumberProvider theProvider = new FromFileNumberProvider();
+        NumberProvider theProvider = new FromUserProvider();
 
         var theNumbers = theProvider.provideNumbers();
 
