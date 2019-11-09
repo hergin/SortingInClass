@@ -2,7 +2,7 @@ package sorters;
 
 import java.util.List;
 
-public class LinearSort implements NumberSorter {
+public class LinearSorter implements NumberSorter {
 
     @Override
     public void sort(List<Integer> items) {

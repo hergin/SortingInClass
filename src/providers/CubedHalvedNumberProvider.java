@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CubedHalvedProvider implements NumberProvider {
+public class CubedHalvedNumberProvider implements NumberProvider {
     @Override
     public List<Integer> provideNumbers() {
         List<Integer> calculatedList = new ArrayList<Integer>();
@@ -19,6 +19,6 @@ public class CubedHalvedProvider implements NumberProvider {
     }
 
     private int calculate(int nextInt) {
-        return Math.floor((nextInt**3)/2);
+        return (int) Math.floor((Math.pow(nextInt,3))/2);
     }
 }
