@@ -1,5 +1,4 @@
 package exporters;
-
 import java.util.List;
 
 public interface NumberExporter {
